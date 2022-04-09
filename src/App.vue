@@ -93,15 +93,15 @@ function resetStore() {
 //     console.log(params);
 // })
 // todoStore.$onAction((params) => {
-// console.log(params);
-// console.log('action is started');
-// after(() => {
-// console.log('action is done');
-// })
-// onError((error) => {
-// console.log('error')
-// })
-// })
+//   console.log(params);
+//   console.log('action is started');
+//   after(() => {
+//     console.log('action is done');
+//   });
+//   onError((error) => {
+//     console.log('error');
+//   });
+// });
 </script>
 
 <style lang="scss">
