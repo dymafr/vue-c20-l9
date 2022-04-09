@@ -47,6 +47,8 @@
           </div>
         </li>
       </ul>
+      <!-- <button class="btn btn-danger" @click="deleteStore">dispose</button> -->
+      <!-- <button class="btn btn-primary" @click="resetStore">reset</button> -->
     </div>
   </div>
 </template>
@@ -80,6 +82,26 @@ function updateFilter(event: Event) {
   const target = event.target as HTMLSelectElement;
   todoStore.updateFilter(target.value as Filter);
 }
+
+function deleteStore() {
+  todoStore.$dispose();
+}
+function resetStore() {
+  todoStore.$reset();
+}
+// todoStore.$subscribe((params) => {
+//     console.log(params);
+// })
+// todoStore.$onAction((params) => {
+// console.log(params);
+// console.log('action is started');
+// after(() => {
+// console.log('action is done');
+// })
+// onError((error) => {
+// console.log('error')
+// })
+// })
 </script>
 
 <style lang="scss">
