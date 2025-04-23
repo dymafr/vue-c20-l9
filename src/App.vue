@@ -105,7 +105,7 @@ function resetStore() {
 </script>
 
 <style lang="scss">
-@import './assets/scss/base.scss';
+@use './assets/scss/base.scss';
 
 .container {
   width: 600px;
